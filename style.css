@@ -4,4 +4,6 @@ html{font-size : 20 px;}
     p:nth-child(3){font-size: 1rem;}
     p:nth-child(4){font-size: 1.5rem;}
     p:nth-child(5){font-size: 2rem;}
- 
+div{ font:italic bold 20px Tahoma; }
+span{ font:bolder 20px Tahoma; }
+p{ font:20px Tahoma; }
