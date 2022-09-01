@@ -11,9 +11,9 @@
     <hr>
     <div align="center">
         ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?><br><br>
-        <table style="width: 20%;  border: 2px solid black;">
+        <table style="width: 10%;  border: 2px solid black;">
         <tr><td style="background-color: #6CD2FE;">แสดงความคิดเห็น</td></tr>
-        <tr><td><textarea rows="4" cols="45"></textarea></td></tr>
+        <tr><td><textarea rows="4" cols="35"></textarea></td></tr>
         <tr><td align="center"><input type="submit" name="submit" value="ส่งข้อความ"></td></tr>
         </table><br>
         <a href="index.html">กลับไปหน้าหลัก</a>
