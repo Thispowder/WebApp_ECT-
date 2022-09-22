@@ -7,18 +7,29 @@
     <title>Verify</title>
 </head>
 <body>
-    <h1 align="center">Webboard KIKI</h1>
+    <h1 align = "center">Webboard Kakkak</h1>
     <hr>
+    <div align ="center">
+     <!--   เข้าสู่ระบบด้วย<br>
+        Login = <?php //echo $_POST["login"];?><br>
+        Password = <?php// echo $_POST["pwd"];?> -->
+        <?php
+       // echo "Login = ".$_POST["login"]."<br>";
+        //echo "Password = ".$_POST["pwd"];
+        ?>
+        <?php 
+            if($_POST["login"]=="admin" && $_POST["pwd"]=="ad1234"){
+                echo "ยินดีต้อนรับคุณ ADMIN";
+            }
+            else if($_POST["login"]=="member" && $_POST["pwd"]=="mem1234"){
+                echo "ยินดีต้อนรับคุณ MEMBER";
+            }else{
+                echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";
+            }
+        ?>
+    </div>
     <div align="center">
-        เข้าสู่ระบบด้วย <br>
-        Login = <?php echo $_POST["login"]; ?><br>
-        Password = <?php echo $_POST["pwd"]; ?><br>
-        
+        <a href="index.php">กลับสู่หน้าหลัก</a>
     </div>
 </body>
 </html>
-
-<?php 
-    echo "Login = ".$_POST["login"]."<br>";
-    echo "Password = ".$_POST["pwd"]."<br>";
-?>
